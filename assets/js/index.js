@@ -19,6 +19,7 @@ function getUserInfo() {
     })
 };
 getUserInfo();
+// 退出
 $('#logout').click(function() {
     layer.confirm('确认退出?', { icon: 3, title: '提示' }, function(index) {
         localStorage.removeItem('token');
